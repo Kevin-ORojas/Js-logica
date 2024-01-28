@@ -18,7 +18,15 @@ console.log(miFuncionOne("Hola Mundo"));
      miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'] */
 
 function miFunctionTwo(str) {
-  return str.split(' ') //! => este metodo divide un objeto de tipo string en un array de cadenas mediante la separacion de la cadena en subcadenas.
+  return str.split(" "); //! => este metodo divide un objeto de tipo string en un array de cadenas mediante la separacion de la cadena en subcadenas.
 }
 
-console.log(miFunctionTwo('hola que tal', ' '))
+console.log(miFunctionTwo("hola que tal", " "));
+
+/* 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo */
+
+function miFuncionThree(caracter) {
+  return (caracter + " ").repeat(3);
+}
+
+console.log(miFuncionThree("Hola mundo", 3));

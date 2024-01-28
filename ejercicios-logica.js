@@ -30,3 +30,26 @@ function miFuncionThree(caracter) {
 }
 
 console.log(miFuncionThree("Hola mundo", 3));
+
+/* 5) Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH" */
+
+function invertirTexto(invertir) {
+  return invertir.split("").reverse().join("");
+}
+
+console.log(invertirTexto("Hola Mundo"));
+
+/* 6) Programa una función para contar el número de veces que se repite una palabra en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2 */
+
+function repetirPalabras(texto, palabra) {
+  let palabras = texto.split(" ");
+  let contador = 0;
+
+  for(let i = 0; i < palabra.length; i++){
+    if(palabras[i] === palabra){
+      contador++
+    }
+  }
+  return contador
+}
+console.log(repetirPalabras("hola mundo adios mundo", "mundo"));

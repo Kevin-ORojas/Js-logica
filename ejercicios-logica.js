@@ -105,10 +105,10 @@ console.log(anagrama("vaca", "cava"));
 
 function fibonacci(n) {
   let fib = [0, 1];
-  for (let i = 2; i <= 50; i++) {
-    fib.push(fib[i - 1] + fib[i - 2]);
+  for (let i = 2; i <= n; i++) {
+    fib.push(fib[i - 1] + fib[i - 2]); // calcula los numeros de fibo, para cada iteracion del bucle, sumando los dos numeros anteriores y agregandolo al arreglo
   }
-  return fib.slice(0, n);
+  return fib.slice(0, n); // extraerá los elementos del índice 0 al índice 19 (los primeros 20 elementos) del arreglo
 }
 const n = 20; // obetener los primeros 20 numeros de fibonacci
 console.log(fibonacci(n));

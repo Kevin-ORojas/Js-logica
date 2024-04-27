@@ -16,3 +16,5 @@ function anagrama(palabra1, palabra2) {
     palabra1.split("").sort().join("") === palabra2.split("").sort().join("")
   );
 }
+
+console.log(anagrama("vaca", "cava"));
